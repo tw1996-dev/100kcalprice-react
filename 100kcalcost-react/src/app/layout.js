@@ -17,6 +17,10 @@ export default function RootLayout({ children }) {
           </ul>
         </nav>
         {children}
+
+              <footer>
+        {/* Empty footer */}
+      </footer>
       </body>
     </html>
   );
