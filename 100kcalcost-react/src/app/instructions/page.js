@@ -4,12 +4,12 @@ export default function Instructions() {
       <section id="currency-selector">
         <p id="selectorFirstP">💰 Choose Your Currency</p>
         <p>Select your preferred currency for price calculations. This setting will be remembered and used in the calculator.</p>
-        
+
         <div className="currency-dropdown-container">
           <input type="text" id="currency-search" placeholder="Type to search currencies " autoComplete="off" />
           <div id="currency-results"></div>
         </div>
-        
+
         <div className="selected-currency" id="selected-currency">
           <div className="selected-currency-text">
             Selected: <span id="selected-currency-display"></span>
@@ -24,11 +24,12 @@ export default function Instructions() {
           <h2>🚀 First Launch</h2>
           <p><strong>For phone users</strong>:</p>
           <ol>
-            <li>Go to the "Calculator" tab in the application.</li>
-            <li>Add a shortcut to your phone's home
+            <li>Go to the &quot;Calculator&quot; tab in the application.</li>
+            <li>
+              Add a shortcut to your phone&apos;s home:
               <ul>
-                <li><strong className="strong">On Android:</strong> Tap menu (⋮) → "Add to Home screen".</li>
-                <li><strong className="strong">On iPhone:</strong> Tap the share button (□↗) → "Add to Home Screen".</li>
+                <li><strong className="strong">On Android:</strong> Tap menu (⋮) → &quot;Add to Home screen&quot;.</li>
+                <li><strong className="strong">On iPhone:</strong> Tap the share button (□↗) → &quot;Add to Home Screen&quot;.</li>
               </ul>
             </li>
             <li>This way, you can launch the calculator with one tap from your home screen!</li>
@@ -39,34 +40,35 @@ export default function Instructions() {
           <h2>🎯 How to Use the Calculator</h2>
 
           <article>
-            <h3>Default Mode: "Per Kilogram"</h3>
+            <h3>Default Mode: &quot;Per Kilogram&quot;</h3>
             <div className="highlight">
               <p>For most products in stores</p>
             </div>
             <ol>
-              <li><strong className="strong">Product Name</strong> - optional (you can skip it for quick comparison)</li>
-              <li><strong className="strong">Kcal/100g</strong> - you'll find this on the product label</li>
-              <li><strong className="strong">Price per kg</strong> - convert the price to per kilogram (e.g., 500g for $5 = $10/kg)</li>
-              <li><strong className="strong">Click</strong> <strong>"➕ Add Product"</strong></li>
+              <li><strong className="strong">Product Name</strong> – optional (you can skip it for quick comparison)</li>
+              <li><strong className="strong">Kcal/100g</strong> – you&apos;ll find this on the product label</li>
+              <li><strong className="strong">Price per kg</strong> – convert the price to per kilogram (e.g., 500g for $5 = $10/kg)</li>
+              <li><strong className="strong">Click</strong> <strong>&quot;➕ Add Product&quot;</strong></li>
             </ol>
           </article>
 
           <article>
-            <h3>Alternative Mode: "Per Piece"</h3>
+            <h3>Alternative Mode: &quot;Per Piece&quot;</h3>
             <div className="highlight">
               <p><strong>Use for products sold individually</strong> (e.g., yogurts, rolls)</p>
             </div>
             <ol>
-              <li><strong className="strong">Product Name</strong> - optional</li>
-              <li><strong className="strong">Weight per piece (g)</strong> - how much one item weighs</li>
-              <li><strong className="strong">Kcal/100g</strong> - from the label</li>
-              <li><strong className="strong">Price</strong>: Choose ONE method:
+              <li><strong className="strong">Product Name</strong> – optional</li>
+              <li><strong className="strong">Weight per piece (g)</strong> – how much one item weighs</li>
+              <li><strong className="strong">Kcal/100g</strong> – from the label</li>
+              <li>
+                <strong className="strong">Price</strong>: Choose ONE method:
                 <ul>
-                  <li><strong>Price per piece</strong> - how much one item costs</li>
-                  <li><strong>OR Price per kg</strong> - the converted price per kilogram</li>
+                  <li><strong>Price per piece</strong> – how much one item costs</li>
+                  <li><strong>OR Price per kg</strong> – the converted price per kilogram</li>
                 </ul>
               </li>
-              <li><strong className="strong">Click </strong><strong>"➕ Add Product"</strong></li>
+              <li><strong className="strong">Click </strong><strong>&quot;➕ Add Product&quot;</strong></li>
             </ol>
           </article>
         </section>
@@ -77,7 +79,8 @@ export default function Instructions() {
           <article>
             <h3>Sorting the Table</h3>
             <ul>
-              <li><strong>Click a column header</strong> to sort by:
+              <li>
+                <strong>Click a column header</strong> to sort by:
                 <ul>
                   <li>🍎 Product (alphabetically)</li>
                   <li>🔥 Calories (ascending/descending)</li>
@@ -103,10 +106,10 @@ export default function Instructions() {
           <article>
             <h3>Quick comparison of two products</h3>
             <ol>
-              <li>Don't enter product names - go straight to calories and price.</li>
+              <li>Don&apos;t enter product names – go straight to calories and price.</li>
               <li>Add the first product.</li>
               <li>Add the second product.</li>
-              <li>Compare the <strong>"Cost of 100 kcal"</strong> column - a lower value means a better price-to-nutritional-value ratio.</li>
+              <li>Compare the <strong>&quot;Cost of 100 kcal&quot;</strong> column – a lower value means a better price-to-nutritional-value ratio.</li>
             </ol>
           </article>
 
@@ -114,9 +117,9 @@ export default function Instructions() {
             <h3>Usage Examples</h3>
             <div className="examples">
               <ul>
-                <li><strong className="strong">Breakfast Cereal</strong>: "Per Kilogram" mode (350 kcal/100g, $8/kg)</li>
-                <li><strong className="strong">Yogurt</strong>: "Per Piece" mode (150g, 80 kcal/100g, $2.50/piece)</li>
-                <li><strong className="strong">Peanuts</strong>: "Per Kilogram" mode (580 kcal/100g, $25/kg)</li>
+                <li><strong className="strong">Breakfast Cereal</strong>: &quot;Per Kilogram&quot; mode (350 kcal/100g, $8/kg)</li>
+                <li><strong className="strong">Yogurt</strong>: &quot;Per Piece&quot; mode (150g, 80 kcal/100g, $2.50/piece)</li>
+                <li><strong className="strong">Peanuts</strong>: &quot;Per Kilogram&quot; mode (580 kcal/100g, $25/kg)</li>
               </ul>
             </div>
           </article>
@@ -126,7 +129,7 @@ export default function Instructions() {
           <h2>ℹ️ Technical Information</h2>
           <ul>
             <li>The calculator <strong>rounds results to 2 decimal places</strong> for better readability.</li>
-            <li>There's a cool-down period of 1 second between adding products to prevent spamming.</li>
+            <li>There&apos;s a cool-down period of 1 second between adding products to prevent spamming.</li>
             <li>You can add a maximum of 500 products.</li>
           </ul>
         </section>
@@ -138,14 +141,14 @@ export default function Instructions() {
           </div>
 
           <div className="highlight">
-            <p>Remember: Calories and price aren't everything – also consider nutritional values, vitamins, and minerals when choosing products! 🥗</p>
+            <p>Remember: Calories and price aren&apos;t everything – also consider nutritional values, vitamins, and minerals when choosing products! 🥗</p>
           </div>
         </section>
 
         <section id="fun-fact-section">
           <h3>Fun Fact: Unlock Your Food Cost Insights!</h3>
           <p>Ever wondered about the real cost of your daily diet?</p>
-          
+
           <ul>
             <li>
               <strong>Calculate your total food cost</strong> based on a specific daily calorie intake and the <strong>cost per 100 kcal</strong>.
@@ -155,7 +158,7 @@ export default function Instructions() {
             </li>
           </ul>
           <p id="lastParagraph">
-            Whether you're tracking a standard daily calorie intake or managing different calorie targets for training and non-training days, this tool provides a <em>clear breakdown of your costs</em>. It's a <em>fantastic way to visualize the financial impact of your nutrition</em>!
+            Whether you&apos;re tracking a standard daily calorie intake or managing different calorie targets for training and non-training days, this tool provides a <em>clear breakdown of your costs</em>. It&apos;s a <em>fantastic way to visualize the financial impact of your nutrition</em>!
           </p>
         </section>
       </main>

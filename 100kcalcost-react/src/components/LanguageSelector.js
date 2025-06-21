@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../lib/hooks/useLanguage';
+import Image from 'next/image';
 
 export default function LanguageSelector() {
   const { currentLanguage, changeLanguage, languages } = useLanguage();
@@ -13,7 +14,7 @@ export default function LanguageSelector() {
 
   // Filter languages based on search
   useEffect(() => {
-    const filtered = languages.filter(lang => 
+    const filtered = languages.filter(lang =>
       lang.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       lang.native.toLowerCase().includes(searchTerm.toLowerCase()) ||
       lang.code.toLowerCase().includes(searchTerm.toLowerCase())
@@ -67,24 +68,26 @@ export default function LanguageSelector() {
 
   return (
     <div id="language-selector" ref={dropdownRef}>
-      <button 
-        id="language-toggle" 
+      <button
+        id="language-toggle"
         className={isDropdownOpen ? 'active' : ''}
         onClick={toggleDropdown}
         aria-label="Language selection"
         aria-expanded={isDropdownOpen}
       >
         {currentLang && (
-          <img 
+          <Image
             id="current-flag"
-            src={`/flags/${currentLang.flag}.svg`} 
+            src={`/flags/${currentLang.flag}.svg`}
             alt={currentLang.name}
+            width={24}
+            height={16}
           />
         )}
       </button>
-      
-      <div 
-        id="language-dropdown" 
+
+      <div
+        id="language-dropdown"
         className={`language-dropdown ${isDropdownOpen ? 'show' : ''}`}
       >
         <div className="language-search">
@@ -98,7 +101,7 @@ export default function LanguageSelector() {
             onClick={(e) => e.stopPropagation()}
           />
         </div>
-        
+
         <div id="language-list" className="language-list">
           {filteredLanguages.length === 0 ? (
             <div className="no-results">No languages found</div>
@@ -109,9 +112,11 @@ export default function LanguageSelector() {
                 className={`language-option ${lang.code === currentLanguage ? 'active' : ''}`}
                 onClick={() => handleLanguageSelect(lang.code)}
               >
-                <img 
-                  src={`/flags/${lang.flag}.svg`} 
+                <Image
+                  src={`/flags/${lang.flag}.svg`}
                   alt={`${lang.name} flag`}
+                  width={24}
+                  height={16}
                 />
                 <div className="language-info">
                   <span className="language-name">{lang.name}</span>

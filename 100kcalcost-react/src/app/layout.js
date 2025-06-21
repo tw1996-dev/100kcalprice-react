@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "100 kcal Cost Calculator",
@@ -11,16 +12,22 @@ export default function RootLayout({ children }) {
       <body>
         <nav id="main-nav" aria-label="Main navigation">
           <ul>
-            <li><a className="navigation-link" href="/">Home</a></li>
-            <li><a className="navigation-link" href="/calculator">Calculator🧮</a></li>
-            <li><a className="navigation-link" href="/instructions">How use?</a></li>
+            <li>
+              <Link className="navigation-link" href="/">Home</Link>
+            </li>
+            <li>
+              <Link className="navigation-link" href="/calculator">Calculator🧮</Link>
+            </li>
+            <li>
+              <Link className="navigation-link" href="/instructions">How use?</Link>
+            </li>
           </ul>
         </nav>
         {children}
 
-              <footer>
-        {/* Empty footer */}
-      </footer>
+        <footer>
+          {/* Empty footer */}
+        </footer>
       </body>
     </html>
   );
