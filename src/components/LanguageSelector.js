@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../lib/hooks/useLanguage';
-import Image from 'next/image';
 
 export default function LanguageSelector() {
   const { currentLanguage, changeLanguage, languages } = useLanguage();
@@ -76,7 +75,7 @@ export default function LanguageSelector() {
         aria-expanded={isDropdownOpen}
       >
         {currentLang && (
-          <Image
+          <img
             id="current-flag"
             src={`/flags/${currentLang.flag}.svg`}
             alt={currentLang.name}
@@ -112,7 +111,7 @@ export default function LanguageSelector() {
                 className={`language-option ${lang.code === currentLanguage ? 'active' : ''}`}
                 onClick={() => handleLanguageSelect(lang.code)}
               >
-                <Image
+                <img
                   src={`/flags/${lang.flag}.svg`}
                   alt={`${lang.name} flag`}
                   width={24}
